@@ -1,31 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-    --cor-principal: #6E859F;
-    --cor-secundaria: #284260;
-    --cor-destaque: #C92BFC;
+    --cor-principal: #4A90E2; /* Azul mais vibrante */
+    --cor-secundaria: #2C3E50; /* Cinza escuro */
+    --cor-destaque: #E74C3C; /* Vermelho para destaque */
 }
 
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    color: var(--cor-principal);
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna */
+    color: var(--cor-secundaria);
+    background-color: #F4F4F4; /* Fundo claro para melhor contraste */
+    line-height: 1.6; /* Melhor legibilidade */
 }
 
 h1, h2, h5 {
-    color: var(--cor-secundaria);
+    color: var(--cor-principal);
     font-weight: 700;
 }
 
 .lead, .btn-link {
     color: var(--cor-destaque);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 a, .btn-link:hover {
-    color: var(--cor-principal)
+    color: var(--cor-principal);
 }
 
-a:hover{
+a:hover {
     color: var(--cor-destaque);
 }
 
+/* Estilo adicional para botões */
+.btn {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* Estilo para cards */
+.card {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
